@@ -1,0 +1,35 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class=" tabs-icon-top tabs-color-active-positive" >
+
+  <!-- Dashboard Tab -->
+  
+
+  <!-- Chats Tab -->
+  <ion-tab title="หน้าหลัก" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/menu/main">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+<ion-tab title="ประวัติ" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/menu/howto">
+    <ion-nav-view name="tab-howto"></ion-nav-view>
+  </ion-tab>
+  <!-- Account Tab -->
+  <ion-tab title="สมาชิก" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/menu/member">
+    <ion-nav-view name="tab-member"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="ติดต่อ" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/menu/connect">
+    <ion-nav-view name="tab-Contact"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="ผู้บริหารสถานศึกษา" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/menu/manager">
+    <ion-nav-view name="tab-manager"></ion-nav-view>
+  </ion-tab>
+
+
+  <ion-tab title="About" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/menu/about">
+    <ion-nav-view name="tab-about"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
